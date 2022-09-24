@@ -1,0 +1,129 @@
+
+.logo{
+    
+width: 50px;
+height: 50px;
+
+
+}
+.p_name{
+   
+margin-top: 10px;
+font-family: 'Inter';
+font-style: normal;
+font-weight: 700;
+font-size: 30px;
+line-height: 165.36%;
+/* or 63px */
+
+display: flex;
+align-items: center;
+text-transform: capitalize;
+
+color: #0D1317;
+
+text-shadow: -3px 3px 10px rgba(0, 0, 0, 0.41);
+}
+.nav-item{
+    
+
+font-family: 'Inter';
+font-style: normal;
+font-weight: 600;
+font-size: 15px;
+line-height: 24px;
+letter-spacing: 0.005em;
+text-transform: capitalize;
+
+color: #101D42;
+
+}
+.btn-up{
+    display: flex;
+flex-direction: row;
+align-items: flex-start;
+
+gap: 10px;
+
+color: white !important;
+
+
+background: #101D42 !important;
+border: 1px solid #000000 !important;
+border-radius: 5px !important
+}
+.btn{
+    border: 1px solid #000000 !important;     
+}
+.fa-solid{
+    margin: 0px;
+    padding:0px;
+}
+hr{
+    height: 20px !important;
+    background: linear-gradient(180deg, #000000 0%, #FFFFFF 100%);
+}
+.section1{
+    flex-direction: column;
+}
+.footer_head{
+    font-family: 'Inter';
+font-style: normal;
+font-weight: 700;
+font-size: 42px;
+line-height: 51px;
+text-transform: capitalize;
+
+background: radial-gradient(28.6% 30.49% at 50% 51.22%, #000000 0%, #3BD8ED 100%);
+-webkit-background-clip: text;
+-webkit-text-fill-color: transparent;
+background-clip: text;
+align-items: center;
+}
+.footer{
+    background-color: #54578D;
+    padding-top: 80px;
+    padding-bottom: 10px;
+   
+
+}
+.content{
+    display: flex;
+    flex-direction: row;
+    align-content: space-around;
+    
+    
+}
+.links{
+    color:#FFFFFF !important;
+    font-family: inter;
+
+    margin: 100px;
+    
+}
+.copyright{
+    color: white;
+    margin:0px;
+}
+.links a{
+    margin:0px;
+    text-decoration: none;
+    color: white;
+
+}
+.links a:hover{
+    text-decoration: underline;
+    color: #FFFFFF;
+    font-weight: 100;
+}
+
+
+@media only screen and (max-width: 720px) {
+    .content{
+        flex-direction:column;
+        
+    }
+    .links{
+        margin:50px;
+    }
+}
