@@ -65,22 +65,36 @@ border-radius: 5px !important
     background-color: #101D42 !important;
     color:white !important ;
 }
+
+
+
+
+
 .section1{
  display: flex;
  flex-wrap: wrap;
+ flex-direction: row-reverse;
+ justify-content: space-evenly;
 }
 .section2{
     display: flex;
     flex-wrap: wrap;
+    justify-content: space-evenly;
     margin-top: 50px;
+    
    }
 .section3{
     display: flex;
     flex-wrap: wrap;
+    flex-direction: row-reverse;
+    justify-content: space-evenly;
+    margin-top: 50px;
    }
 .section4{
     display: flex;
     flex-wrap: wrap;
+    justify-content: space-evenly;
+    margin-top: 50px;
    }
 
 
@@ -150,13 +164,12 @@ color: #000000;
 height: 340px;
 align-items: center;
 background: linear-gradient(180deg, #E9F3FF 0%, #9798B5 100%);
-box-shadow: -8px 8px 10px rgba(0, 0, 0, 0.25) !important;
+box-shadow: -8px 8px 20px rgba(0, 0, 0, 0.25) !important;
 border-radius: 71px !important;
 }
 .text-end{
     text-align: center;
-width: 623px;
-height: 79px;
+display: flex;
 margin-top: 50px;
 font-family: 'Inter';
 font-style: normal;
@@ -197,6 +210,9 @@ hr{
     background: linear-gradient(180deg, #000000 0%, #FFFFFF 100%);
     opacity: .10 !important;
 }
+.pre-footer{
+    margin: 15px;
+}
 .footer_head{
     font-family: 'Inter';
 font-style: normal;
@@ -211,6 +227,13 @@ background: radial-gradient(28.6% 30.49% at 50% 51.22%, #000000 0%, #3BD8ED 100%
 background-clip: text;
 align-items: center;
 }
+.socialmedia_icons{
+  margin:25px;
+}
+.socialmedia_icons a{
+    padding-inline: 15px;
+
+}
 .footer{
     background-color: #54578D;
     padding-top: 80px;
@@ -220,17 +243,21 @@ align-items: center;
 }
 .content{
     display: flex;
-    flex-direction: row;
-    align-content: space-around;
+    justify-content: space-evenly;
     width: 100%;
     
 }
+
 .links{
     color:#FFFFFF !important;
     font-family: inter;
-
+    font-weight: 100;
+    font-size: small;
     margin-left: 100px;
     
+}
+.links h2{
+    font-weight: 300;
 }
 .copyright{
     color: white;
@@ -255,3 +282,41 @@ background: linear-gradient(360deg, #BFC3FF 0%, rgba(191, 195, 255, 0) 30.17%);
 box-shadow: -8px 8px 10px rgba(0, 0, 0, 0.25) !important;
 border-radius: 10px !important;
 }
+
+/* media-queries */
+
+@media only screen and (max-width: 768px) {
+
+    /* For mobile phones: */
+    .text{
+       display: flex;
+       flex-direction: column;
+       justify-content: center; 
+    }
+    .heading1{
+        height: auto;
+        width: auto;
+        display:flex;
+    }
+    .content{
+        flex-direction: column;
+    }
+    .links{
+        margin:25px;
+    }
+  }
+
+  @media only screen and (max-width: 620px) {
+    /* For mobile phones: */
+    .heading1{
+        
+        font-size: 50px;
+    }
+    .section1
+    .section2
+    .section3
+    .section4 img{
+       height:auto;
+       width: 100%;
+    }
+  }
